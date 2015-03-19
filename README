@@ -1,4 +1,20 @@
-Here is a simple build script.
-Please have fun.
-Any questions please contact me:
-zhizhou.zh@gmail.com
+这是编译mips64 toolchain的脚本
+
+其中：
+
+- build.sh     -- 编译小端
+- build-big.sh -- 编译大端
+
+使用方法：
+
+    mkdir -p mips64 && cd mips64
+    mkdir sources
+    cd sources
+    wget  http://ftp.cross-lfs.org/pub/clfs/clfs-packages/clfs-packages-1.2.0.tar
+    tar -xf clfs-packages-1.2.0.tar
+    cd ..
+    git clone https://github.com/zhizhouzh/mips64-toolchain.git scripts
+    cd scripts
+    ./build.sh
+
+参考： http://cross-lfs.org/files/BOOK/1.2.0/CLFS-mips.html
